@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css?v=1">
+    <title>Aim Game</title>
+</head>
+<body>
+    
+    <section class="screen start">
+        <div class="container">
+            <h1 class="screen__title">Aim Game</h1>
+            <a id="start-game" class="screen__link">Start Game</a>
+        </div>
+    </section>
+
+    <section class="screen time">
+        <div class="container">
+            <h1 class="screen__title">Choose time</h1>
+            <div class="screen__wrapper">
+                <div class="screen__item">
+                    <button class="screen__button" type="button" data-time="20">20s</button>
+                </div>
+                <div class="screen__item">
+                    <button class="screen__button" type="button" data-time="40">40s</button>
+                </div>
+                <div class="screen__item">
+                    <button class="screen__button" type="button" data-time="60">60s</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="screen board">
+       <div class="container">
+       <h1 class="screen__title board-title">Left: <span class="screen__title-span">00:00</span></h1>
+           <div id="board" class="screen__board"></div>
+        </div>
+    </section>
+
+
+    <script src="script/script.js"></script>
+</body>
+</html>

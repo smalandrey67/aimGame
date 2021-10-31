@@ -1,0 +1,111 @@
+/*==============================GLOBAL=============================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    cursor: crosshair;
+}
+
+/*==============================SCREEN=============================== */
+.screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-out; 
+}
+.screen-up{
+    margin: -100vh 0 0 0;
+}
+.screen__title{
+    text-transform: uppercase;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+.screen__tilte--hide{
+    opacity: 0;
+    visibility: hidden;
+}
+.screen__link{
+    color: inherit;
+    text-decoration: none;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+.screen__link:hover{
+   color: blue;
+}
+.screen__wrapper{
+    display: flex;
+    align-items: center;
+    margin: 0 -13px;
+}
+.screen__item{
+    flex: 0 1 33.33%;
+    padding: 0 13px;
+}
+.screen__button{
+    border: none;
+    outline: none;
+    background: none;
+    border: 1px solid #fff;
+    font-size: 20px;
+    font-weight: 500;
+    color: inherit;
+    height: 50px;
+    width: 100%;
+    padding: 0 5px;
+    transition: all 0.4s ease;
+}
+.screen__button:hover{
+   background-color: #fff;
+   color: #000;
+}  
+.screen__board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+}
+
+/*==============================BOARD=============================== */
+.screen__circle{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.board-title{
+    text-decoration: underline;
+    font-size: 30px;
+    margin: 0;
+}
+.screen__subtitle{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.screen__restart{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.screen__restart:hover{
+    color: blue;
+}
+
+
